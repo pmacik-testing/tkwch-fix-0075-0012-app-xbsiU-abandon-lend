@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ziui
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0012-tenant/tkwch-fix-0075-0012-app/devfile-sample-ziui@sha256:d6af65ad4cb648e8ae0674ec25ae13cfbf5bca481515e0a4402a1b3426c977b1
+        name: my-nodejs
+        resources: {}
+status: {}
